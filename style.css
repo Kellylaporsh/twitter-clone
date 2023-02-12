@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+.overview{
+    display: grid;
+    grid-template-columns: 260px auto 350px;
+    padding: 1% 5%;
+    padding-right: 0;
+}
+
+.plus{
+    color: white;
+    display: none;
+}
+
+.logo{
+    font-size: 2rem;
+    color:white;
+    position: fixed;
+    margin-bottom: 4rem;
+}
+
+.leftsidebarmenu{
+    position: fixed;
+    padding-top: 2rem;
+}
+
+.leftsidebarmenuitems{
+    font-size: 19px;
+    margin-top: .5rem;
+    padding: .5rem .2rem;
+    color: black;
+}
+.leftsidebarmenuitems:hover{
+    background: gray;
+    border-radius: 2rem;
+    width: 100%;
+}
+.leftsidebarmenuitems a{
+    text-decoration: none;
+    color: white;
+}
+
+.leftsidebarmenuitems i{
+    padding-right: 1rem;
+    color: #fff;
+}
+.searchhide{
+    color: white;
+    display: none;
+}
+
+.btn{
+    background-color: rgba(25, 148, 248);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.leafpen{
+    display: none;
+}
+
+.leftsideprofile{
+    color: white;
+    padding-top: 2rem;
+    width: 100%;
+}
+.profilename{
+    display: block;
+    margin-top: -3.8rem;
+    margin-left: 4rem;
+    padding-top: .5rem;
+}
+.profileusername{
+    display: block;
+    margin-top: -.5rem;
+    margin-left: 4rem;
+    padding-top: 1rem;
+    color: gray;
+}
+.profilefullstops{
+    display: block;
+    margin-top: -2rem;
+    margin-left: 13rem;
+}
+
+
+.main{
+    border: 1px solid #fff;
+    border-top: none;
+    color: white;
+    overflow: hidden;
+}
+
+/*.scroll{
+    overflow-y: scroll;
+    height: 100vh;
+}
+.scroll::-webkit-scrollbar{
+    width: 10px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: rgba(25, 148, 248);
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: white;
+}*/
+.mainhead h1{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.mainpage{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 8rem;
+    padding-bottom: 0;
+    align-content: center;
+    border-bottom: 1px solid #fff;
+    border-bottom-width: 100%;
+    overflow: hidden;
+    color: gray;
+}
+
+.foryou{
+    border-bottom: 5px solid rgba(25, 148, 248);
+    border-radius: .3rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+.mainupdate{
+    padding: 1rem;
+    border-bottom: 1px solid #fff;
+}
+.profilepic{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 60%;
+}
+
+.happenings input{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.happening{
+    padding-left: 1rem;
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.icons{
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.icons ion-icon{
+    padding: 0 .5rem;
+    color: rgba(25, 148, 248);
+    font-size: 1.2rem;
+}
+
+
+.btn.main{
+    border: none;
+    margin-left: auto;
+    outline: none;
+    padding: .5rem 2rem;
+}
+
+.showtweets{
+    color: rgba(25, 148, 248);
+    padding: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.tweets{
+    border-bottom: 1px solid gray;
+}
+
+.tweetscontents{
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+.tweetscontents:hover{
+    background-color: rgba(128, 128, 128, .05);
+}
+
+.tweetitems{
+    padding-left: 4rem;
+    margin-top: -3rem;
+}
+.tweetname{
+    font-weight: bold;
+}
+.username{
+    margin-top: -2rem;
+    color: gray;
+    font-size: .8rem;
+}
+.fullstops{
+    display: block;
+    margin-left: auto;
+    margin-top: -1rem;
+}
+.mytweet{
+    padding: .5rem 0;
+}
+
+.bodyimg{
+    width: 100%;
+    height: 80vh;
+    border-radius: 2rem;
+    padding-top: 1rem;
+}
+
+.twobodyimage{
+    display: flex;
+}
+
+.one{
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 2rem;
+    width: 50%;
+    height: 50vh;
+}
+.two{
+    width: 50%;
+    height: 50vh;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-left: .2rem;
+}
+.tweeticons{
+    align-items: center;
+    padding: 1rem 4rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+}
+.tweeticons ion-icon{
+    margin-right: 4.5rem;
+    color: none;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.numbers{
+    display: inline-block;
+    margin-right: 0rem;
+    align-items: center;
+    margin-left: -4rem;
+    margin-right: 3.5rem;
+}
+.i{
+ display: flex;
+}
+
+
+.rightsidebar{
+    align-items: center;
+    padding: 0 auto;
+    cursor: pointer;
+    overflow: hidden;
+    padding-right: 3rem;
+}
+/*.rightsidebar::-webkit-scrollbar{
+    width: 10px;
+
+}
+.rightsidebar::-webkit-scrollbar-thumb{
+    background-color: rgba(25, 148, 248);
+}
+.rightsidebar::-webkit-scrollbar-track{
+    background-color: white;
+}*/
+
+.rightsidebar input{
+    margin: 0 2rem;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.12);
+    position: fixed;
+    color: #fff;
+}
+
+.searchbtn{
+    position: fixed;
+    display: block;
+    color: red;
+    margin-top: .6rem;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+    padding-right: -2rem;
+    margin-bottom: -2.5rem;
+    margin-left: 3rem;
+    color: gray;
+}
+.searchbox{
+    position: fixed;
+}
+
+
+.rightsidebarcontents{
+    padding: 1rem 0rem;
+    width: 100%;
+    margin: 0 2rem;
+    margin-top: 4rem;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.12);
+    border-radius: 2rem;
+}
+.rightsidebaritems{
+    width: 100%;
+}
+
+.trends{
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 2rem;
+}
+
+.trendingitems{
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    padding-left: 2rem;
+   
+}
+.trendingitems:hover{
+    background-color: rgba(128, 128, 128, 0.12);
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.trending{
+    color: rgba(128, 128, 128, 0.875);
+    font-size: .9rem;
+}
+
+.trendingname{
+    color: white;
+    font-size:1.2rem ;
+}
+
+.trendingtweets{
+    color: rgba(128, 128, 128, 0.875);
+    font-size: .9rem;
+}
+
+.whotofollow{
+    padding: 1rem 0rem;
+    width: 100%;
+    margin: 2rem 2rem;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.12);
+    border-radius: 2rem;
+    overflow: hidden;
+    font-size: 1rem;
+}
+.followprofile{
+    padding: 1.5rem 1.5rem;
+}
+
+.followbox{
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    justify-content: space-between;
+}
+
+.followusername{
+    margin-top: -2rem;
+}
+
+.followbtn{
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    border: none;
+    margin-left: 3rem;
+    outline: none;
+    margin-top: -2rem;
+    padding: .5rem .8rem;
+    border-radius: 2rem;
+    align-items: center;
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------- MEDIA QUERY---------------------*/ 
+
+@media only screen and (max-width:950px){
+
+    .overview{
+        display: grid;
+        grid-template-columns: 70px auto 30px;
+        padding: 3% 5%;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .leftsidebarmenu{
+        align-items: center;
+    }
+
+    .leftsidebarmenuitems a{
+        display: none;
+    }
+
+    .leftsidebarmenuitems i{
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .leftsidebarmenuitems{
+        font-size: 19px;
+        margin-top: 1rem;
+        padding: .5rem .2rem;
+        color: black;
+    }
+
+    .leftsidebarmenuitems:hover{
+        background: gray;
+        border-radius: 50%;
+        width: 20%;
+        align-items: center;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .leftsideprofile{
+        padding-top: 6rem;
+    }
+    .leftprofilepic{
+        margin-left: -1rem;
+    }
+    .profilename{
+        display: none;
+    }
+    .profileusername{
+        display: none;
+    }
+    .profilefullstops{
+        display: none;
+    }
+    .leftprofilepic{
+        margin-top: 10rem;
+    }
+
+    .rightsidebar{
+        display: none;
+    }
+
+    .main{
+       width: 100%;
+    }
+
+
+    .profilepic{
+        margin-top: 0;
+    }
+
+    .icons{
+        display: flex;
+        margin-top: 3rem;
+        align-items: center;
+        padding: 0 1rem;
+        margin-left: 3rem;
+    }
+    
+    .icons ion-icon{
+        padding: 0 .5rem;
+        color: rgba(25, 148, 248);
+        font-size: 1.2rem;
+    }
+
+    .btn.main{
+        display: inline-block;
+        border: none;
+        margin-left: auto;
+        outline: none;
+        padding: .5rem 0rem;
+        width: 20%;
+    }
+
+    .tweeticons{
+        align-items: center;
+        padding: 1rem 4rem;
+        padding-bottom: 1rem;
+        padding-right: 0;
+    }
+    .tweeticons ion-icon{
+        margin-right: 5rem;
+        color: none;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+
+    .leafpen{
+        display: block;
+        background-color: rgba(25, 148, 248);
+        outline: none;
+        font-size: 1.5rem;
+        color: white;
+        border-radius: 50%;
+        padding: 1rem .5rem;
+        border: none;
+        margin-left: -1rem;
+    }
+    .add{
+        font-size: .5rem;
+    }
+    
+}
+
+
+
+/*-----------------------MEDIA QUERY MOBILE VIEW---------------------*/ 
+
+
+@media only screen and (max-width:450px){
+    .overview{
+        display: block;
+        padding: 2% 0;
+        margin: 0;
+    }
+
+    .leftsidebar{
+        position: relative;
+    }
+
+    .leftsidebarmenu{
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+        margin-right: 0;
+        background-color: black;
+        justify-content: space-between;
+    }
+
+    .leftsidebarfixed{
+        position: fixed;
+        bottom: 0rem;
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+        margin-right: 0;
+        background-color: black;
+        justify-content: space-between;
+    }
+    
+    .leftsidebarmenuitems{
+        margin: 0 1rem;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .leftsidebarmenuitems i{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin:  0;
+        color: white;
+    }
+
+    .lefthideicon{
+        display: none;
+    }
+
+    .searchhide{
+        display: block;
+        color: white;
+    }
+
+    .leftsideprofile{
+        position: absolute;
+        top: 0; bottom: 0;
+        color: white;
+        padding: 0 5%;
+        padding-top: .2rem;
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .leftprofilepic{
+        position: absolute;
+        margin-left: 0;
+        margin-top: 0rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 60%;
+    }
+
+    .logo{
+        margin-left: 13rem;
+        font-size: 1.8rem;
+        color: rgba(25, 148, 248);
+        position: absolute;
+    }
+
+    .main{
+        width: 100%;
+        border: none;
+    }
+    .mainhead h1{
+        display: none;
+    }
+
+    .mainpage{
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 5rem;
+        padding-bottom: 0;
+        align-content: center;
+        border-bottom: 1px solid #fff;
+        border-bottom-width: 100%;
+        overflow: hidden;
+        color: gray;
+    }
+    .mainupdate{
+        display: none;
+    }
+    
+    .foryou{
+        border-bottom: 5px solid rgba(25, 148, 248);
+        border-radius: .3rem;
+        padding-bottom: 1rem;
+        color: #fff;
+    }
+    
+    .mainupdate{
+        padding: 0rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    .iconout{
+        display: none;
+    }
+
+    .tweeticons{
+        align-items: center;
+        padding: 1rem 4rem;
+        padding-bottom: 1rem;
+        padding-right: 0;
+    }
+    .tweeticons ion-icon{
+        margin-right: 4.5rem;
+        color: none;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    .i ion-icon{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+   
+    .numbers{
+        display: inline-block;
+        align-items: center;
+        margin-left: -4rem;
+        margin-right: 2rem;
+        font-size: .8rem;
+    }
+    .i{
+     display: flex;
+    }
+
+    .username{
+        font-size: 1.1rem;
+    }
+    
+    .plus{
+        color: white;
+        display: block;
+        background-color: rgba(25, 148, 248);
+        border-radius: 50%;
+        font-size: 2rem;
+        padding: .5rem 1rem;
+        position: absolute;
+        bottom: 4rem; right: 2rem;
+    }
+
+    .bodyimg{
+        width: 100%;
+        height: 50vh;
+        border-radius: 2rem;
+        padding-top: 1rem;
+        overflow: hidden;
+    }
+    
+    .twobodyimage{
+        overflow: hidden;
+        display: flex;
+    }
+    
+    .one{
+        border-radius: 1rem;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 2rem;
+        width: 100%;
+        height: 40vh;
+    }
+    .two{
+        width: 100%;
+        height: 40vh;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        padding-left: .2rem;
+    }
+
+    .leafpen{
+        display: none;
+    }
+}

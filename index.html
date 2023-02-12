@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Homepage</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="overview">
+
+        <div class="leftsidebar">
+            <i class="fab fa-twitter logo"></i>
+            
+            <div class="leftsidebarmenu">
+                <div class="leftsidebarfixed">
+                    <div class="plus"><i class="fas fa-plus"></i></div>
+                    <div class="leftsidebarmenuitems">
+                        <i class="fas fa-home"></i> <a href="">Home</a>
+                    </div>
+                    <div class="leftsidebarmenuitems searchhide">
+                        <i class="fas fa-search" id="searchiconhide"></i><a     href="">Explore</a>
+                    </div>
+                    <div class="leftsidebarmenuitems lefthideicon">
+                        <i class="fas fa-hashtag"></i> <a href="">Explore</a>
+                    </div>
+                    <div class="leftsidebarmenuitems">
+                        <i class="fas fa-bell"></i> <a  href="">Notifications</a>
+                    </div>
+                    <div class="leftsidebarmenuitems">
+                        <i class="fas fa-envelope"></i> <a  href="">Messages</a>
+                    </div>
+                    <div class="leftsidebarmenuitems lefthideicon">
+                        <i class="fas fa-bookmark"></i> <a  href="">Bookmarks</a>
+                    </div>
+                    <div class="leftsidebarmenuitems lefthideicon">
+                        <i class="fas fa-list"></i> <a href="">Lists</a>
+                    </div>
+                    <div class="leftsidebarmenuitems lefthideicon">
+                        <i class="fas fa-user"></i> <a href="">Profile</a>
+                    </div>
+                    <div class="leftsidebarmenuitems lefthideicon">
+                        <i class="fas fa-ellipsis"></i> <a href="">More</a>
+                    </div>
+                    <div class="btn">
+                        <span>tweet</span>
+                    </div>
+
+                    <button class="leafpen"><i class="fas fa-plus add"></i> <i class="fas fa-leaf leaf"></i></button>
+                </div>
+
+              <div class="leftsideprofile">
+                <img class="profilepic leftprofilepic" src="/images/pp.jpg" alt="">
+                <div class="profilebox">
+                    <span class="profilename">Kelly La Porsh</span>
+                    <span class="profileusername">@Kelly__porsh</span>
+                    <ion-icon class="profilefullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="main scroll">
+            <div class="mainhead">
+                  <h1>Home</h1>
+
+               <div class="mainpage">
+                    <span class="foryou">
+                       <h3>For you</h3>
+                   </span>
+
+                   <span>
+                     <h3>Following</h3>
+                   </span>
+                </div>
+            </div>
+            <div class="mainupdate">
+                <div class="happenings">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <input class="happening" placeholder="What's happening?"></input>
+                </div>
+                <div class="icons">
+                    <ion-icon name="image-outline"></ion-icon>
+                    <ion-icon name="document-outline"></ion-icon>
+                    <ion-icon name="options-outline" class="iconout"></ion-icon>
+                    <ion-icon name="happy-outline"></ion-icon>
+                    <ion-icon name="calendar-clear-outline" class="iconout"></ion-icon>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span class="btn main">tweet</span>
+                </div>
+            </div>
+
+            <div class="showtweets">
+                Show 50 Tweets
+            </div>
+
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">Mayorofekiti</span>
+                        <span class="username">@mayor</span>
+                        <span class="username">- 15m</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            What do you think about a million?
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">14</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">10</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">35</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">85</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">Innocent</span>
+                        <span class="username">@guilty</span>
+                        <span class="username">- 3m</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            Wallpaper thread anyone?
+                            <img class="bodyimg" src="./images/wallpaper.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">3</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">2</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">14</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">55</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">R.E.M.A</span>
+                        <span class="username">@fanof_rema</span>
+                        <span class="username">- 22h</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            Rema's NFT is harrrrdddd!!!!!
+                            <img class="bodyimg" src="./images/20220327_083735.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">10</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">8</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">15</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">25</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">Lizzie</span>
+                        <span class="username">@Lisa</span>
+                        <span class="username">- 2h</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            My Cat is sooooooo cuteeee
+                            <img class="bodyimg" src="./images/20220421_082753.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">2</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">1</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">2</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">5</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/IMG-20230129-WA0019.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">Meekiemeekz</span>
+                        <span class="username">@meek_nezz</span>
+                        <span class="username">- 1h</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            Happy six months my Big Baby
+                            <div class="twobodyimage">
+                               <img class="bodyimg one" src="./images/IMG-20230129-WA0019.jpg" alt="">
+                               <img class="bodyimg two" src="./images/61d010662bdb4ff48de4cf6ddbf8f14a.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">5</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">6</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">20</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">50</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+    
+                </div>   
+            </div>
+
+            
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">Agbapunter</span>
+                        <span class="username">@Punter_lord</span>
+                        <span class="username">- 25m</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            Let's boom big today
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">5</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">2</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">50</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">100</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">Guddie 4 u</span>
+                        <span class="username">@Goodnezz</span>
+                        <span class="username">- 55m</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            Happy Three months my Big Baby
+                            <div class="twobodyimage">
+                               <img class="bodyimg one" src="./images/IMG-20230210-WA0049.jpg" alt="">
+                               <img class="bodyimg two" src="./images/IMG-20230210-WA0051.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">10</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">5</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">25</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">50</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">CR7</span>
+                        <span class="username">@Cristiano</span>
+                        <span class="username">- 10h</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            Ronaldo is the G.O.A.T of football
+                            <br><br><br>
+                            He owns Football
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">195</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">150</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">200</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">257</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+             
+            <div class="tweets">
+                <div class="tweetscontents">
+                    <img class="profilepic" src="/images/pp.jpg" alt="">
+                    <div class="tweetitems">
+                         <span class="tweetname">Football news</span>
+                        <span class="username">@futbal</span>
+                        <span class="username">- 25m</span>
+                        <ion-icon class="fullstops" name="ellipsis-horizontal-outline"></ion-icon>
+                        <div class="mytweet">
+                            Ronaldo is the 4th greatest of all time, he's a true standout even without winning a World Cup, but ranks 4th (after Diego Maradona, Pele & Messi). Football isn't just about goals. That said, he's the 2nd best player of his generation. Good luck to him on his forthcoming games.
+                        </div>
+                    </div>
+
+                    <div class="tweeticons">
+                        <div class="i">
+                             <ion-icon name="chatbubble-outline"></ion-icon><p class="numbers">25</p>
+                             <ion-icon name="repeat-outline"></ion-icon><p class="numbers">15</p>
+                             <ion-icon name="heart-outline"></ion-icon><p class="numbers">55</p>
+                             <ion-icon name="stats-chart-outline"></ion-icon><p class="numbers">105</p>
+                             <ion-icon name="share-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+
+        
+
+        <div class="rightsidebar">
+            <div class="searchbox">
+            <span class="searchbtn"><ion-icon name="search-outline"></ion-icon></span>
+            <input type="text" placeholder="search twitter">
+            </div>
+            <div class="rightsidebarcontents">
+                <div class="rightsidebaritems">
+                    <div class="trends">
+                        Trends for you
+                    </div>
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             Chelsea
+                        </div>
+                        <div class="trendingtweets">
+                             256k Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             PVC
+                        </div>
+                        <div class="trendingtweets">
+                             336k Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             #Newnairanote
+                        </div>
+                        <div class="trendingtweets">
+                             500k Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             Davido
+                        </div>
+                        <div class="trendingtweets">
+                             1.1m Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             Nepa
+                        </div>
+                        <div class="trendingtweets">
+                             2,056 Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             Peter Obi
+                        </div>
+                        <div class="trendingtweets">
+                             200k Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             Shanty town
+                        </div>
+                        <div class="trendingtweets">
+                             102k Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             Music
+                        </div>
+                        <div class="trendingtweets">
+                             222k Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             Wizkid
+                        </div>
+                        <div class="trendingtweets">
+                             888k Tweets
+                        </div>
+                    </div>
+
+                    <div class="trendingitems">
+                        <div class="trending">
+                             Trending in Nigeria
+                        </div>
+                        <div class="trendingname">
+                             Lagos
+                        </div>
+                        <div class="trendingtweets">
+                             508k Tweets
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightsidebaritems">
+                <div class="whotofollow">
+                    <div class="trends">
+                        Who to follow
+                    </div>
+                    <div class="leftsideprofile followprofile">
+                        <img class="profilepic" src="/images/20220327_083735.jpg" alt="">
+                        <div class="profilebox">
+                            <div class="followbox">
+                                <span class="profilename">Jonathan</span>
+                                <span class="followbtn">Follow</span>
+                            </div>
+                            <span class="profileusername followusername">@jaythan</span>
+                        </div>
+                    </div>
+
+                    <div class="leftsideprofile followprofile">
+                        <img class="profilepic" src="/images/IMG-20230210-WA0051.jpg" alt="">
+                        <div class="profilebox">
+                            <div class="followbox">
+                                <span class="profilename">Squid</span>
+                                <span class="followbtn">Follow</span>
+                            </div>
+                            <span class="profileusername followusername">@squid_game</span>
+                        </div>
+                    </div>
+
+                    <div class="leftsideprofile followprofile">
+                        <img class="profilepic" src="/images/20220515_183756.jpg" alt="">
+                        <div class="profilebox">
+                            <div class="followbox">
+                                <span class="profilename">Jay</span>
+                                <span class="followbtn">Follow</span>
+                            </div>
+                            <span class="profileusername followusername">@Jay_Z</span>
+                        </div>
+                    </div>
+
+                    <div class="leftsideprofile followprofile">
+                        <img class="profilepic" src="/images/20221005_230855.jpg" alt="">
+                        <div class="profilebox">
+                            <div class="followbox">
+                                <span class="profilename">Joker</span>
+                                <span class="followbtn">Follow</span>
+                            </div>
+                            <span class="profileusername followusername">@jokesman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
